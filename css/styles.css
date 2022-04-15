@@ -62,6 +62,16 @@ color: #000000;
     color: var (--header-color);
 }
 
+.header-link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+        color: var(--header-color);
+}
+
 .contacts {
 font-family: 'Roboto';
 font-style: normal;
