@@ -1,4 +1,4 @@
-:root {
+ :root {
     --header-color: #212121;
     --text-color: #757575;
     --background-solutions-color: #2F303A;
@@ -13,6 +13,26 @@ body {
     background-color: #FFFFFF;
 }
 
+html {
+    box-sizing: border-box;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+ul, ol{
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    outline: 2px solid tomato;
+    }
 
 .list {
     list-style: none;
@@ -91,18 +111,21 @@ color: var(--text-color);
 /* ----Main section------ */
 
 .solutions {
-    background-color: var(--background-solutions-color)
-}
+    background-color: var(--background-solutions-color);
+    text-align: center;
+    /* margin-bottom: 94px; */
+    }
 
 .main-title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
+    /* text-align: center; */
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
-}
+    margin-bottom: 30px;
+} 
 
 .main-btn {
     font-family: 'Roboto';
@@ -116,9 +139,18 @@ color: var(--text-color);
     letter-spacing: 0.06em;
     color: #FFFFFF;
     background-color: var(--accent-color);
+    border-radius: 4px;
+    padding: 10px 32px 10px 32px;
+    min-width: 200px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: 1 solid black;
 }
 
 /* ---advantages section--- */
+.advantages {
+    padding-top: 61px;
+    padding-bottom: 94px;
+}
 
 .advantage-title {
     font-weight: 700;
@@ -127,6 +159,7 @@ color: var(--text-color);
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--header-color);
+    margin-bottom: 10px;
 }
 
 .advantage-text {
@@ -137,6 +170,9 @@ color: var(--text-color);
 }
 
 /* ---About us section--- */
+.about-us {
+padding-bottom: 94px;
+}
 
 .about-title {
     font-weight: 700;
@@ -145,12 +181,14 @@ color: var(--text-color);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--header-color);
+    margin-bottom: 50px;
 }
 
 /* ---team section--- */
 
 .team-section {
     background-color: var(--team-background-color);
+    padding: 94px 0;
 }
 
 .team-title {
@@ -160,6 +198,7 @@ color: var(--text-color);
     text-align: center;
     letter-spacing: 0.03em;    
     color: var(--header-color);
+    margin-bottom: 50px;
 }
 
 .team-name {
@@ -169,6 +208,7 @@ color: var(--text-color);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--header-color);
+    margin-bottom: 10px;
 }
 
 .team-duty {
@@ -183,6 +223,8 @@ color: var(--text-color);
 
 .footer {
     background-color: var(--background-solutions-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-logo {
@@ -196,7 +238,7 @@ color: var(--second-header-color);
 }
 
 .finish-logo {
-  color: var(--accent-color);  
+    color: var(--accent-color);  
 }
 
 .footer-adress {
@@ -225,7 +267,10 @@ color: var(--second-header-color);
     cursor: pointer;
     color: #212121;
     background-color: rgba(245, 244, 250, 1);
+    border-radius: 4px;
+    padding: 6px 22px;
 }
+
 
 .btn:hover,
 .btn:focus {
@@ -234,6 +279,9 @@ color: var(--second-header-color);
 }
 
 /* ----Projects----- */
+.projects {
+    padding: 94px 0;
+}
 
 .projects-name {
     font-weight: 700;
@@ -241,6 +289,7 @@ color: var(--second-header-color);
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--header-color);
+    margin-top: 20px;
 }
 
 .projects-tipe {
@@ -248,4 +297,5 @@ color: var(--second-header-color);
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--text-color);
+    margin-top: 4px;
 }
