@@ -1,4 +1,4 @@
- :root {
+:root {
     --header-color: #212121;
     --text-color: #757575;
     --background-solutions-color: #2F303A;
@@ -88,13 +88,12 @@ margin-right: 93px;
 
 .item {
     display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    /* padding-top: 32px;
+    padding-bottom: 32px; */
 }
 
 .item + .item {
     margin-left: 50px;
-    
 }
 
 .header-navigation {
@@ -106,11 +105,14 @@ margin-right: 93px;
 }
 
 .header-link {
+    display: block;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--header-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .contacts {
@@ -119,6 +121,7 @@ margin-right: 93px;
 }
 
 .contact {
+display: block;
 font-style: normal;
 font-weight: 500;
 font-size: 14px;
@@ -143,20 +146,18 @@ color: var(--text-color);
     background-color: var(--background-solutions-color);
     text-align: center;
     display: block;
-    /* height: 600px; */
-    /* margin-bottom: 94px; */
-    }
+    padding-top: 200px;
+    padding-bottom: 200px;
+        }
 
 .main-title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    /* text-align: center; */
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
-    /* margin-top: 200px; */
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
     width: 696px;
@@ -182,7 +183,7 @@ color: var(--text-color);
 }
 
 /* ---advantages section--- */
-.advantages {
+.section {
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -217,7 +218,7 @@ color: var(--text-color);
 
 /* ---About us section--- */
 .about-us {
-padding-bottom: 94px;
+padding-top: 0;
 }
 
 .our-item {
@@ -252,16 +253,20 @@ padding-bottom: 94px;
 
 .team-section {
     background-color: var(--team-background-color);
-    padding: 94px 0;
 }
 
-.team-name {
+.team-info {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* .team-name {
     margin-top: 30px;
 }
 
 .team-duty {
     margin-bottom: 30px;
-}
+} */
 
 .team-title {
     font-weight: 700;
@@ -308,7 +313,7 @@ padding-bottom: 94px;
 }
 
 .footer-item + .footer-item {
-  margin-top: 9px;  
+margin-top: 9px;  
 }
 
 .footer-logo {
@@ -321,7 +326,7 @@ letter-spacing: 0.03em;
 color: var(--second-header-color);
 
 display: block;
-margin-bottom: 30px;
+margin-bottom: 20px;
 }
 
 
@@ -367,12 +372,11 @@ color: var(--second-header-color);
 }
 
 /* ----Projects----- */
-.projects {
-    padding: 94px 0;
-}
+
 .buttons {
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .button-item + .button-item {
@@ -381,10 +385,6 @@ color: var(--second-header-color);
 
 .photo-item {
     display: block;
-}
-
-.button-item {
-    margin-bottom: 50px;
 }
 
 .projects-descriptions {
